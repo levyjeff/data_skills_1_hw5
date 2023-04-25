@@ -14,21 +14,20 @@
 ##################
 
 # To answer these questions, you will continue from where you left off in
-# homework 4.  Your dataframe should have 5 columns: STATE, POPESTIMATE
-# for 2020, 2021, and 2022, and POPCHANGE.  Each row should be a US state.
+# homework 4, by using the included file named hw4_data.csv.
 
 # Question 1a: Reshape the data from wide to long, using the wide_to_long function,
 # making sure you reset the index to the default values if any of your data is located 
 # in the index.  What happened to the POPCHANGE column, and why should it be dropped?
 
-#Question 1b: Repeat the reshaping using the melt method.  Clean up the result so
-#that it is the same as the result from 4a (without the POPCHANGE column).
+# Question 1b: Repeat the reshaping using the melt method.  Clean up the result so
+# that it is the same as the result from 1a (without the POPCHANGE column).
 
-# Question 2: Your Open the state-visits.xlsx file, and fill in the VISITED column
+# Question 2: Open the state-visits.xlsx file, and fill in the VISITED column
 # with a dummy variable for whether you've visited a state or not.  If you
 # haven't been to many states, then filling in a random selection of them
 # is fine too.  Save your changes.  Then load the xlsx file as a dataframe in
-# Python, and merge the visited column into your original long-form population 
+# Python, and merge the VISITED column into your original long-form population 
 # dataframe, only keeping values that appear in both dataframes.  Are any 
 # observations dropped from this?  Show code where you investigate your merge, 
 # and display any observations that weren't in both dataframes.
@@ -41,18 +40,19 @@
 # year, and EPU_Composite, with each row being a unique state-year combination.
 
 # Question 3b) Reshape the EPU data into wide format so that each row is unique 
-# by state, and the columns represent the EPU-C values for the years years 2022, 
+# by state, and the columns represent the EPU-C values for the years 2022, 
 # 2021, and 2020. 
 
 # Question 3c) Finally, merge this data into your merged data from question 2, 
 # making sure the merge does what you expect.
 
-# Question 4: Using groupby on the VISITED column in the dataframe resulting
-# from the previous question, answer the following questions and show how you 
-# calculated them: a) what is the single smallest state by 2022 population 
-# that you have visited, and not visited?  b) what are the three largest states 
-# you have visited, and the three you have not visited? c) do states you have 
-# visited or states you have not visited have a higher average EPU-C value in 2022?
+# Question 4: Using groupby on the VISITED column in the dataframe resulting 
+# from the previous question, answer the following questions and show how you  
+# calculated them: a) what is the single smallest state by 2022 population  
+# that you have visited, and not visited?  b) what are the three largest states  
+# by 2022 population you have visited, and the three largest states by 2022 
+# population you have not visited? c) do states you have visited or states you  
+# have not visited have a higher average EPU-C value in 2022?
 
 # Question 5: Transforming data to have mean zero and unit standard deviation
 # is often called "standardization", or a "zscore".  The basic formula to 
