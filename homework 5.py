@@ -27,7 +27,7 @@
 # with a dummy variable for whether you've visited a state or not.  If you
 # haven't been to many states, then filling in a random selection of them
 # is fine too.  Save your changes.  Then load the xlsx file as a dataframe in
-# Python, and merge the VISITED column into your original long-form population 
+# Python, and merge the VISITED column into your original wide-form population 
 # dataframe, only keeping values that appear in both dataframes.  Are any 
 # observations dropped from this?  Show code where you investigate your merge, 
 # and display any observations that weren't in both dataframes.
